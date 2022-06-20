@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<h2> Weather for  {{city}} for {{day}} {{month}} is: </h2>
+<p> {{ result }}
+    <br> Average celcius temp: {{avg}}
+    <br> Highest celcius temp: {{top}}
+    <br> Lowest celcius temp: {{min}}
+</p>
+{% endblock %}

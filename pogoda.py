@@ -55,6 +55,6 @@ def main():
 
     webbrowser.open(f'https://www.google.com/maps/place/50%C2%B002\'01.2%22N+19%C2%B015\'36.3%22E/@{latitude},{longitude},17z')
 
-
+#
 # if __name__ == '__main__':
 #     main()

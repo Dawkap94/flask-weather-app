@@ -6,8 +6,9 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="container-fluid large shadow">
     {% block page_content %}
+    {{ url_for('static', filename='style.css') }}
     {% endblock %}
 </div>
 {% endblock %}

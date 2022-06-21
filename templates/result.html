@@ -1,10 +1,36 @@
 {% extends "base.html" %}
-
 {% block page_content %}
-<h2> Weather for  {{city}} for {{day}} {{month}} is: </h2>
-<p> {{ result }}
-    <br> Average celcius temp: {{avg}}
-    <br> Highest celcius temp: {{top}}
-    <br> Lowest celcius temp: {{min}}
-</p>
+
+<! -- background depends for weather -->
+<body class="intro-header" style="height: 700px; background-image: url('static/img/{{result}}.jpg');
+background-repeat: no-repeat; background-position: center; background-size: cover;">
+<! -- end background -->
+
+{% block weather_result %}
+<div class="container text-center w-25"
+     style="background-color: rgba(90, 90, 90, 0.5); color: #FFF; margin-top: 250px
+     ; font-family: Courier New, monospace; font-size: 30px; border-radius: 25px;">
+    <p>
+        Weather for {{city}} for {{day}} {{month}} is:
+        <br> {{result}}
+        <br> Average celcius temp: {{avg}}
+        <br> Highest celcius temp: {{top}}
+        <br> Lowest celcius temp: {{min}}
+    </p>
+</div>
+{% endblock %}
+
+<br>
+<br>
+
+{% block button %}
+<a href="/">
+    <center>
+    <form action="/">
+         <input class="btn" type="button" value="GO BACK" />
+    </form>
+    </center>
+</a>
+{% endblock %}
+
 {% endblock %}

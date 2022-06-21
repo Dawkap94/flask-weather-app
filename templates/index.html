@@ -5,7 +5,13 @@
 
 
 {% block page_content %}
-{{ wtf.quick_form(form) }}
-{% endblock %}
+    <body class="intro-header" style="height: 700px; background-image: url('static/img/background_edited.jpg');
+    background-repeat: no-repeat; background-position: center; background-size: cover;">
+<div class="container h-100" style="height: 700px">
+    <div class="container w-50 d-flex align-items-center" style="margin-top: 200px; width: 500px;">
+        {{ wtf.quick_form(form) }}
+    </div>
+</div>
 
+{% endblock %}
 

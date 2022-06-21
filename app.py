@@ -15,8 +15,7 @@ fdate = date.today().strftime('%d/%m/%Y')
 DMY = fdate.split("/")
 globals()["DMY"] = DMY
 
-## Format dzisiejszej daty DD-MM-YYYY jako global uzyty ponizej
-
+## Todays date format DD-MM-YYY as global used below
 
 class CurrentWeather(FlaskForm):
     month = SelectField("Select month: ", choices=[(f"{DMY[1]}", f"{month_name[int(DMY[1])]}")])

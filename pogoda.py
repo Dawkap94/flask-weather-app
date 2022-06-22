@@ -50,8 +50,8 @@ def main():
         "For which day? Format YYYY-MM-DD: ")
     latitude, longitude = check_city(city_name)
 
-    print(f"The weather for city coordinates:{latitude, longitude} is: " +
-          check_weather(latitude, longitude, day))
+    print(f"The weather for city coordinates:{latitude, longitude} is: {check_weather(latitude, longitude, day)}, the"
+          f" celcius is {check_celcius(latitude, longitude, day)} ")
 
     webbrowser.open(f'https://www.google.com/maps/place/50%C2%B002\'01.2%22N+19%C2%B015\'36.3%22E/@{latitude},{longitude},17z')
 

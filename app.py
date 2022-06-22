@@ -8,7 +8,7 @@ from datetime import date
 from calendar import month_name
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "jakis randomowy tekst"
+app.config['SECRET_KEY'] = "NiceToKnowTheWeather"
 boot = Bootstrap(app)
 today = date.today()
 fdate = date.today().strftime('%d/%m/%Y')

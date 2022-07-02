@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block page_content %}
+
+<body class="intro-header" style="height: 700px; background-image: url('static/img/404.jpg');
+background-repeat: no-repeat; background-position: center; background-size: cover;">
+
+<br>
+<br>
+
+{% block button %}
+<a href="/">
+    <center>
+    <form action="/">
+         <input class="btn" type="button" value="You got me, let me go back" />
+    </form>
+    </center>
+</a>
+{% endblock %}
+
+{% endblock %}
